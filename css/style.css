@@ -1,0 +1,49 @@
+#container{
+    display: grid;
+    height: 98vh;
+    width: 98vw;
+    gap: 1vh;
+    grid-template-columns: 20% 45% 35%;
+    grid-template-rows: 20% 65% 12%;
+    grid-template-areas:
+        'hd hd hd'
+        'mn mn as'
+        'ft ft ft'
+}
+
+body{
+}
+
+header{
+    grid-area: hd;
+    background-color: seagreen;
+    border-radius: 8px;
+}
+
+h1{
+    text-align: center;
+    font-size: 34px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    
+}
+
+main{
+    grid-area: mn;
+    background-color: aqua;
+    border-radius: 8px;
+}
+
+aside{
+    grid-area: as;
+    background-color: burlywood;
+    border-radius: 8px;
+}
+
+footer{
+    grid-area: ft;
+    background-color: orange;
+    border-radius: 8px;
+}
