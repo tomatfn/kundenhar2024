@@ -6,7 +6,7 @@
     width: 98vw;
     gap: 1vh;
     grid-template-columns: 20% 45% 35%;
-    grid-template-rows: 20% 65% 12%;
+    grid-template-rows: 20% 65% 25%;
     grid-template-areas:
         'hd hd hd'
         'mn mn as'
@@ -81,4 +81,12 @@ footer{
     grid-area: ft;
     background-color: orange;
     border-radius: 8px;
+    text-align: center;
+    justify-content: center;
 }
+
+.footertext{
+
+    justify-content: right;
+}
+
