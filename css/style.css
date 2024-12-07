@@ -1,16 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Wet+Paint&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Wet+Paint&display=swap');
+
+
 #container{
     display: grid;
     height: 98vh;
     width: 98vw;
     gap: 1vh;
-    grid-template-columns: 20% 45% 35%;
+    grid-template-columns: 20% 44% 35%;
     grid-template-rows: 20% 65% 25%;
     grid-template-areas:
         'hd hd hd'
         'mn mn as'
         'ft ft ft'
+}
+#container2{
+    display: grid;
+    height: 98vh;
+    width: 98vw;
+    gap: 1vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 65% 20%;
+    grid-template-areas:
+        'hd hd'
+        'mn mn'
+        'ft ft'
 }
 
 body{
@@ -19,7 +35,7 @@ body{
 
 header{
     grid-area: hd;
-    background-color: #e74c3c;
+    /* background-color: #e74c3c; */
     border-radius: 8px;
 }
 
@@ -27,6 +43,7 @@ h1{
     text-align: center;
     font-size: 57px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 15px;
 }
 
 nav{
@@ -47,7 +64,7 @@ nav a{
 
 main{
     grid-area: mn;
-    background-color: aqua;
+    /* background-color: aqua; */
     border-radius: 8px;
    background-image: url(/kundenhar2024/img/gymbackground.avif);
     background-size: cover;
@@ -73,20 +90,42 @@ main{
 
 aside{
     grid-area: as;
-    background-color: burlywood;
     border-radius: 8px;
+}
+
+#asidetext1{
+    font-size: 21px;
+    font-family: Oswald;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 footer{
     grid-area: ft;
-    background-color: orange;
+    /* background-color: orange; */
     border-radius: 8px;
     text-align: center;
     justify-content: center;
 }
 
-.footertext{
+.footertext1{
 
     justify-content: right;
+    font-family: Oswald;
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 15px;
 }
 
+.footertext2{
+
+    justify-content: right;
+    font-family: Oswald;
+    font-size: 15px;
+
+    margin-top: 0px;
+}
