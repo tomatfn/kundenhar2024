@@ -22,13 +22,32 @@
     width: 98vw;
     gap: 1vh;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 20% 65% 20%;
+    grid-template-rows: 20% 65% 35%;
     grid-template-areas:
         'hd hd'
         'mn mn'
-        'ft ft'
+        'ft ft';
 }
-
+#car1{
+    width: 300px;
+    height: 500px;
+    background-color: blueviolet;
+}
+#car2{
+    width: 300px;
+    height: 500px;
+    background-color: green;
+}
+#car3{
+    width: 300px;
+    height: 500px;
+    background-color: pink;
+}
+#car4{
+    width: 300px;
+    height: 500px;
+    background-color: orange;
+}
 body{
     background-color:rgba(0,0,0,0.2);
 }
@@ -37,6 +56,7 @@ header{
     grid-area: hd;
     /* background-color: #e74c3c; */
     border-radius: 8px;
+    display: grid;
 }
 
 h1{
@@ -44,6 +64,11 @@ h1{
     font-size: 57px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 15px;
+}
+
+#h1color{
+    color: #e74c3c;
+
 }
 
 nav{
@@ -62,18 +87,26 @@ nav a{
     color: black;
 }
 
-main{
+#mainhome{
     display: flex;
     justify-content: center;
     align-items: center;
     grid-area: mn;
     /* background-color: aqua; */
     border-radius: 8px;
-   background-image: url(/kundenhar2024/img/gymbackground.avif);
+    background-image: url(/kundenhar2024/img/gymbackground.avif);
     background-size: cover;
     background-repeat: no-repeat;
+    border-left: 10px #e74c3c solid;
+}
+
+main#mainprogram{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     
 }
+
 
 .quote {
     display: flex;
@@ -81,6 +114,7 @@ main{
     text-align: center;
     font-size: 36px;
     font-family:playfair display;
+    
     
 }
 
@@ -90,21 +124,33 @@ main{
 
 }
 
+
 aside{
     grid-area: as;
     border-radius: 8px;
     background-color:#e74c3c;
     display: flex;
     align-items: center;
+    flex-direction: column;
+}
+
+#welcometext{
+    font-family: Oswald;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight:400;
+
 }
 
 #asidetext1{
-    font-size: 23px;
+    font-size: 21px;
+    margin-top: 0px;
     font-family: Oswald;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
-    text-align: center;
+    text-align: left;
     justify-content: center;
     margin-bottom: 10px;
     border-radius: 8px;
@@ -131,6 +177,9 @@ footer{
     justify-content: right;
     font-family: Oswald;
     font-size: 15px;
-
     margin-top: 0px;
+}
+
+.footertext2:hover{
+    color: #e74c3c;
 }
