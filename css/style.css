@@ -28,26 +28,11 @@
         'mn mn'
         'ft ft';
 }
-#car1{
-    width: 300px;
-    height: 500px;
-    background-color: blueviolet;
+
+#container3{
+    
 }
-#car2{
-    width: 300px;
-    height: 500px;
-    background-color: green;
-}
-#car3{
-    width: 300px;
-    height: 500px;
-    background-color: pink;
-}
-#car4{
-    width: 300px;
-    height: 500px;
-    background-color: orange;
-}
+
 body{
     background-color:rgba(0,0,0,0.2);
 }
@@ -87,7 +72,7 @@ nav a{
     color: black;
 }
 
-#mainhome{
+main#mainhome{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,9 +89,61 @@ main#mainprogram{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+    row-gap: 30px; 
+    column-gap: 0px;
 }
 
+#car1{
+    width: 700px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-family: Oswald;
+    border: #e74c3c 2px solid;
+}
+#car2{
+    width: 700px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-family: Oswald;
+    border: #e74c3c 2px solid;
+}
+#car3{
+    width: 700px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-family: Oswald;
+    border: #e74c3c 2px solid;
+}
+#car4{
+    width: 700px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-family: Oswald;
+    font-weight: bold;
+    border: #e74c3c 2px solid;
+}
+
+.workoutcat{
+    font-size: 25px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.hyphen-list{
+    list-style-type: none;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: Oswald;
+    font-weight: bold;
+}
+
+.hyphen-list li::before{
+    content: "- ";
+}
 
 .quote {
     display: flex;
@@ -182,4 +219,5 @@ footer{
 
 .footertext2:hover{
     color: #e74c3c;
+    width: auto;
 }
