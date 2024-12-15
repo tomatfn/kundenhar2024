@@ -30,7 +30,16 @@
 }
 
 #container3{
-    
+    display: grid;
+    height: 98vh;
+    width: 98vw;
+    gap: 1vh;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 20% 65% 35%;
+    grid-template-areas:
+        'hd hd hd'
+        'mn mn as'
+        'ft ft ft';
 }
 
 body{
@@ -162,13 +171,47 @@ main#mainprogram{
 }
 
 
-aside{
+main#mainhealth{
+    
+    border-radius: 8px;
+    row-gap: 10px;
+}
+
+#advcard1{
+    background-color: pink;
+    border-radius: 8px;
+    height: 150px;
+    width: 70vw;
+}
+
+#advcard2{
+    background-color: blue;
+    border-radius: 8px;
+    height: 150px;
+    width: 70vw;
+}
+
+#advcard3{
+    background-color: lightgreen;
+    border-radius: 8px;
+    height: 150px;
+    width: 70vw;
+}
+
+aside#asidemain{
     grid-area: as;
     border-radius: 8px;
     background-color:#e74c3c;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+aside#asidehealth{
+    grid-area: as;
+    background-color: blue;
+    width: 100px;
+    border-radius: 8px;
 }
 
 #welcometext{
