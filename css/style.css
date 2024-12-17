@@ -29,18 +29,19 @@
         'ft ft';
 }
 
-#container3{
+.container3{
     display: grid;
     height: 98vh;
     width: 98vw;
     gap: 1vh;
-    grid-template-columns: 75% 25%;
-    grid-template-rows: 20% 65% 35%;
+    grid-template-columns: 70% 29%;
+    grid-template-rows: 20% 70% 35%;
     grid-template-areas:
-        'hd hd hd'
-        'mn mn as'
-        'ft ft ft';
+        'hd hd'
+        'mn as'
+        'ft ft';
 }
+
 
 body{
     background-color:rgba(0,0,0,0.2);
@@ -172,30 +173,32 @@ main#mainprogram{
 
 
 main#mainhealth{
-    
     border-radius: 8px;
-    row-gap: 10px;
+}
+
+.advicerubrik{
+    margin-top: 0px;
 }
 
 #advcard1{
     background-color: pink;
     border-radius: 8px;
-    height: 150px;
-    width: 70vw;
+    height: 33.3%;
+    width: auto;
 }
 
 #advcard2{
     background-color: blue;
     border-radius: 8px;
-    height: 150px;
-    width: 70vw;
+    height: 33.3%;
+    width: auto;
 }
 
 #advcard3{
     background-color: lightgreen;
     border-radius: 8px;
-    height: 150px;
-    width: 70vw;
+    height: 33.3%;
+    width: auto
 }
 
 aside#asidemain{
@@ -209,8 +212,8 @@ aside#asidemain{
 
 aside#asidehealth{
     grid-area: as;
-    background-color: blue;
-    width: 100px;
+    background-color: red;
+    width: auto;
     border-radius: 8px;
 }
 
