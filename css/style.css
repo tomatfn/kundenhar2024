@@ -34,8 +34,8 @@
     height: 98vh;
     width: 98vw;
     gap: 1vh;
-    grid-template-columns: 70% 29%;
-    grid-template-rows: 20% 70% 35%;
+    grid-template-columns: 68% 31%;
+    grid-template-rows: 20% 65% 35%;
     grid-template-areas:
         'hd hd'
         'mn as'
@@ -178,24 +178,35 @@ main#mainhealth{
 
 .advicerubrik{
     margin-top: 0px;
+    margin-bottom: -15px;
+    padding-left: 20px;
+    font-size: 22px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+
+}
+
+.adviceinfo{
+    font-size: 18px;
+    font-family: Oswald;
 }
 
 #advcard1{
-    background-color: pink;
+    /* background-color: pink; */
     border-radius: 8px;
     height: 33.3%;
     width: auto;
 }
 
 #advcard2{
-    background-color: blue;
+    /* background-color: blue; */
     border-radius: 8px;
     height: 33.3%;
     width: auto;
 }
 
 #advcard3{
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     border-radius: 8px;
     height: 33.3%;
     width: auto
@@ -212,9 +223,16 @@ aside#asidemain{
 
 aside#asidehealth{
     grid-area: as;
-    background-color: red;
+    /* background-color: red; */
     width: auto;
     border-radius: 8px;
+    display: flex;
+}
+
+#healthyheart{
+    height: auto;
+    justify-content: center;
+    padding-left: 0px;
 }
 
 #welcometext{
